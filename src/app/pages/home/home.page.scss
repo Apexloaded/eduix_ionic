@@ -1,0 +1,33 @@
+.list-courses {
+  background-color: #BFDBFE;
+}
+
+ion-item {
+  --background: #BFDBFE;
+}
+
+ion-slide {
+  border-radius: 15px;
+
+  .slide {
+    position: relative;
+    overflow: hidden;
+    background: #eee;
+    box-shadow: 1px 1px 2px 2px #eee;
+
+    .course-img {
+      background-color: #eee;
+      max-height: 130px;
+      min-height: 130px;
+      overflow: hidden;
+    }
+
+    .post-content {
+      min-height: 80px;
+      max-height: 80px;
+      width: 100%;
+    }
+  }
+}
+
+

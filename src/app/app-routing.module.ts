@@ -16,7 +16,16 @@ const routes: Routes = [
   },
   {
     path: 'courses',
-    loadChildren: () => import('./pages/courses/courses.module').then( m => m.CoursesPageModule)
+    children: [
+      {
+        path: '',
+        loadChildren: () => import('./pages/courses/courses.module').then( m => m.CoursesPageModule)
+      },
+      {
+        path: ':id',
+        loadChildren: () => import('./pages/courses-details/courses-details.module').then( m => m.CoursesDetailsPageModule)
+      }
+    ]
   },
   {
     path: 'school',

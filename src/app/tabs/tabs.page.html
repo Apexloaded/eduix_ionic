@@ -1,29 +1,28 @@
 <ion-tabs>
-  <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="home">
+  <ion-fab vertical="bottom" horizontal="center" translucent="true" appShowhidetabs>
+    <ion-fab-button color="primary" (click)="home()">
       <ion-icon name="home-outline"></ion-icon>
-      <ion-label>Home</ion-label>
-    </ion-tab-button>
+    </ion-fab-button>
+  </ion-fab>
 
+  <ion-tab-bar slot="bottom" appShowhidetabs>
     <ion-tab-button tab="tutoring">
       <ion-icon name="briefcase-outline"></ion-icon>
-      <ion-label>Tutoring</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button tab="courses">
+    <ion-tab-button tab="courses" class="courses">
       <ion-icon name="book-outline"></ion-icon>
-      <ion-label>Courses</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button tab="school">
+    <svg height="50" viewBox="0 0 100 50" width="100" xmlns="http://www.w3.org/2000/svg"><path d="M100 0v50H0V0c.543 27.153 22.72 49 50 49S99.457 27.153 99.99 0h.01z" fill="white" fill-rule="evenodd"></path></svg>
+
+    <ion-tab-button tab="school" class="school">
       <span class="tab-dot bg-danger"></span>
       <ion-icon name="school-outline"></ion-icon>
-      <ion-label>School</ion-label>
     </ion-tab-button>
 
     <ion-tab-button (click)="toggleMore()">
       <ion-icon name="apps-outline"></ion-icon>
-      <ion-label>More</ion-label>
     </ion-tab-button>
   </ion-tab-bar>
 

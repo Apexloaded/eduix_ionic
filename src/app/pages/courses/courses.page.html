@@ -1,9 +1,46 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>courses</ion-title>
-  </ion-toolbar>
+<ion-header class="ion-no-border">
+  <ion-grid class="ion-no-padding">
+    <ion-row>
+      <ion-col size="12" size-xl="6" offset-xl="3">
+        <ion-toolbar>
+          <ion-title>My Courses</ion-title>
+          <ion-buttons slot="end">
+            <ion-button color="dark" (click)="openSearch()">
+              <ion-icon name="search-outline" slot="icon-only"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+          <ion-buttons slot="end">
+            <ion-button color="dark">
+              <ion-icon name="filter-outline" slot="icon-only"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-header>
 
 <ion-content>
-
+  <ion-grid class="ion-no-padding py-0 mx-2">
+    <ion-row>
+      <ion-col size="12" size-xl="6" offset-xl="3" class="p-0">
+        <ion-list class="p-0">
+          <ion-item *ngFor="let tutorial of lessons" lines="none" class="mb-2 rounded-md" [routerLink]="['/', 'app', 'courses', tutorial.id]" button detail="false">
+            <ion-thumbnail slot="start" class="rounded-full list-avatar">
+              <img class="rounded-full list-avatar" src="{{ tutorial.image }}">
+            </ion-thumbnail>
+            <article>
+              <p class="font-bold m-0 text-md heading text-dark">{{ tutorial.post }}</p>
+              <p class="font-normal m-0 mt-1 text-sm text-medium">{{ tutorial.duration }}</p>
+            </article>
+            <div slot="end">
+              <div class="play">
+                <ion-icon name="play-outline" color="secondary"></ion-icon>
+              </div>      
+            </div>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

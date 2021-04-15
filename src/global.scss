@@ -156,7 +156,7 @@ h1,h2,h3,h4,h5,h6, ion-card-title, ion-title {
 
 .text-xs	{font-size: 0.75rem !important; line-height: 1rem !important;}
 .text-sm	{font-size: 0.875rem !important; line-height: 1.25rem !important;}
-.text-base	{font-size: 1rem !important; line-height: 1.5rem !important;}
+.text-md	{font-size: 1rem !important; line-height: 1.5rem !important;}
 .text-lg	{font-size: 1.125rem !important; line-height: 1.75rem !important;}
 .text-xl	{font-size: 1.25rem !important; line-height: 1.75rem !important;}
 .text-2xl	{font-size: 1.5rem !important; line-height: 2rem !important;}
@@ -178,14 +178,16 @@ h1,h2,h3,h4,h5,h6, ion-card-title, ion-title {
 .font-extrabold	{font-weight: 800 !important;}
 .font-black	{font-weight: 900 !important;}
 
-.rounded-none	{border-radius: 0px !important};
-.rounded-sm	{border-radius: 0.125rem !important};
-.rounded	{border-radius: 0.25rem !important};
-.rounded-md	{border-radius: 0.375rem !important};
-.rounded-lg	{border-radius: 0.5rem !important};
-.rounded-xl	{border-radius: 0.75rem !important};
-.rounded-2xl	{border-radius: 1rem !important};
-.rounded-3xl	{border-radius: 1.5rem !important};
+.rounded-none	{border-radius: 0px !important;}
+.rounded-sm	{border-radius: 0.125rem !important;}
+.rounded	{border-radius: 0.25rem !important;}
+.rounded-md	{border-radius: 0.375rem !important;}
+.rounded-lg	{border-radius: 0.5rem !important;}
+.rounded-xl	{border-radius: 0.75rem !important;}
+.rounded-2xl	{border-radius: 1rem !important;}
+.rounded-3xl	{border-radius: 1.5rem !important;}
+.rounded-4xl {border-radius: 2.5rem !important;}
+.rounded-5xl {border-radius: 4.5rem !important;}
 .rounded-full {border-radius: 100% !important;}
 
 .w-0	{width: 0px !important;}
